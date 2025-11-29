@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import Productdetels from './pags/Productdetels/Productdetels'
 import Cart from './pags/Cart/Cart'
 import Scroll from './componantes/Scroll/Scroll'
-import Categorypage from './pags/category/categorypage'
+import Categorypage from './pags/category/Categorypage.jsx';
 import Searchresult from './pags/Searchresulte/Searchresult'
 import Favorite from './pags/Favorite/Favorite'
 
