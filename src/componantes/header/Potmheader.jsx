@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './potmheader.css';
+import './Potmheader.css';
 import { Link, useLocation } from 'react-router-dom';
 
 const navlinks = [
