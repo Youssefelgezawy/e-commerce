@@ -1,0 +1,18 @@
+.category-products{
+    padding-top: 150px;
+
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.category-products .title h2{
+    color: #0090f0;
+    text-transform: capitalize;
+    font-size: 40px;
+}

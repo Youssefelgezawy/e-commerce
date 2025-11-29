@@ -1,0 +1,114 @@
+.item-detels {
+    padding: 140px 0 40px 0;
+}
+
+.item-detels .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-detels .img-item {
+    width: 40%;
+}
+
+.item-detels .img-item .big-img {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.item-detels .img-item .big-img img {
+    height: 300px;
+    width: auto;
+}
+
+.item-detels .img-item .sm-img {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item-detels .img-item .sm-img img {
+    width: 24%;
+}
+
+.item-detels .detels-item {
+    width: 55%;
+}
+
+.item-detels .detels-item .name {
+    margin-bottom: 30px;
+    color: #0090f0;
+}
+
+.item-detels .detels-item .stars {
+    margin: 15px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.item-detels .detels-item .stars .bi {
+    color: #f8d941;
+    font-size: 20px;
+}
+
+.item-detels .detels-item .price {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.item-detels .detels-item h5 {
+    font-weight: 500px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.item-detels .detels-item .stock {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #0090f0;
+}
+
+.item-detels .detels-item .btn {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #0090f0;
+    color: white;
+}
+
+.item-detels .detels-item .btn:hover {
+    background-color: #0a87daf4;
+}
+
+.item-detels .detels-item .icons {
+    padding-top: 20px;
+    padding-left: 5px;
+    display: flex;
+    gap: 25px;
+}
+
+.icons i {
+    width: 40px;
+    height: 40px;
+    background-color: #e6e6e6;
+    color: #0090f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    background-color: #0090f0;
+}
+
+.icons i:hover {
+    color: white;
+}

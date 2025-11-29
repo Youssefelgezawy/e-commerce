@@ -1,0 +1,131 @@
+.top-slid h2 {
+    color: #0090f0;
+    margin-top: 80px;
+}
+
+.top-slid {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d6d6d5;
+    padding: 15px 20px 20px 0;
+    text-transform:capitalize ;
+}
+
+.top-slid::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 100px;
+    height: 2px;
+    background: #0090f0;
+}
+
+.product {
+    position: relative;
+    width: 250px;
+    background: #fff;
+    padding: 25px 15px;
+    border: 1px solid #d6d6d6d5;
+    transition: 0.5s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product a {
+  text-decoration: none;
+
+}
+
+
+.product:hover {
+    border-color: #0090f0;
+    box-shadow: 10px 10px 15px #94949429;
+}
+
+.product .img-product {
+    position: relative;
+    height: 180px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product .img-product img {
+    height: 160px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product .name-product {
+    margin-bottom: 10px;
+    color: #253237;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product .stars-product {
+    margin: 15px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.product .stars-product .bi {
+    color: #f8d941;
+    font-size: 18px;
+}
+
+.product .price {
+    color: #0090f0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product .icons {
+    display: flex;
+    flex-direction: column;
+    color: #0090f0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    gap: 5px;
+    transition: 0.5s;
+}
+
+.product:hover .icons {
+    right: 15px;
+}
+
+.in-cart .icons .btn{
+    background:#0090f0 !important;
+    color: #fff;
+}
+
+
+.product .icons .bi,
+.product .icons .btn {
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.product .icons .bi.infavorite{
+    background:#0090f0 !important;
+    color: #fff;
+}
+
+.product.in-cart .icons .btn {
+  pointer-events: none !important;
+  opacity: 0.6; 
+}
+

@@ -1,0 +1,118 @@
+.Potmheader {
+    background-color: #0090f0;
+    position: fixed;
+    top: 70px;/* نفس ارتفاع Topheader تقريبا عشان ينزل تحته */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.Potmheader .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Potmheader .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.Potmheader .category-nav {
+    width: 220px;
+    height: 100%;
+    position: relative;
+}
+
+.Potmheader .category-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Potmheader .category-btn p {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.Potmheader .category-nav .category-nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #999;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.Potmheader .category-nav .category-nav-list.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.Potmheader .category-nav .category-nav-list a {
+    padding: 14px 10px;
+    border-bottom: 1px solid #e5e2e2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Potmheader .category-nav .category-nav-list a:last-child {
+    border-bottom: 0;
+}
+
+.Potmheader .category-nav .category-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.Potmheader .nav-links {
+    display: flex;
+    margin-left: -400px;
+    height: 100%;
+}
+
+.Potmheader .nav-links .links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.Potmheader .nav-links .links.active {
+    background-color: #0079ca;
+}
+
+.Potmheader .nav-icons {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.Potmheader .nav-icons .bi {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}

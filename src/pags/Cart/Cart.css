@@ -1,0 +1,133 @@
+.checkout {
+    padding-top: 150px;
+    margin: 50x 0;
+}
+
+.checkout .ourdersumary {
+    width: 45%;
+    padding: 0 20px;
+    border: 1px solid #d6d6d6d5;
+    box-shadow: 0 8px 10px #c0bfbf44;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.checkout .ourdersumary h1 {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    color: #0090f0;
+}
+
+.checkout .items {
+    height: 350px;
+    overflow-y: auto;
+}
+
+.checkout .items .itemcart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    border-bottom: 1px solid #d6d6d6d5;
+    padding-right: 20px;
+}
+
+.checkout .items .itemcart .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.checkout .items .itemcart .content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkout .items .itemcart .img-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkout .items .itemcart .img-name img {
+    width: 80px;
+}
+
+.checkout .items .itemcart .content h1 {
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.checkout .items .itemcart .content .price-item {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0090f0;
+    margin: 0;
+}
+
+
+.checkout .items .itemcart .content .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+
+}
+
+.checkout .items .itemcart .content .quantity-control button {
+    border: none;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout .items .itemcart .content .quantity-control .quantity {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #9b959b30  ;
+    min-width: 20px;
+    text-align: center;
+    color: #0090f0;
+}
+
+.checkout .items .itemcart .bi{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.checkout .ourdersumary .bottom-summary .shop-table{
+    padding: 10px 0 10px 10px;
+    border-top: 1px solid #d6d6d6d5;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.checkout .ourdersumary .bottom-summary .shop-table p{
+    font-size: 20px;
+}
+
+.checkout .ourdersumary .bottom-summary .Total-checkout{
+   color: #0090f0;
+   font-size: 20px;
+    font-weight: 600;
+
+}
+
+.checkout .ourdersumary .bottom-summary .button-div{
+    padding-bottom: 15px;
+    font-size: 20px !important;
+}

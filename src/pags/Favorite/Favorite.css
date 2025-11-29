@@ -1,0 +1,35 @@
+.favorite-products {
+    padding: 140px 0 10px 0;
+}
+
+.favorite-products .top-slide{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: #0090f0;   
+}
+
+.top-slide h2 {
+    color: #0090f0;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.favorite-products p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #0090f0;   
+}
+
+
+
+
+
+
+
+
+

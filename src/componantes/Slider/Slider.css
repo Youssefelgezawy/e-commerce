@@ -1,0 +1,34 @@
+.container .carousel{
+    margin: 150px 0 10px 0;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 10%; 
+    left: 5%;
+    text-align:left ;
+}
+
+.carousel-caption h5,.carousel-caption p,.carousel-caption h1{
+    color: black;
+    display: block;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: gray;  
+}
+
+.carousel-caption h1{
+    color:#0090f0 ;
+    width: 300px;
+    padding: 0 0 50px 0;
+}
+.carousel-caption .btn-primary {
+    background-color: #0090f0;
+    border-color: #0090f0;
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #007acc; 
+    border-color: #007acc;
+}
