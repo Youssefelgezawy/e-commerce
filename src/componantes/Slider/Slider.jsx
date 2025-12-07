@@ -18,7 +18,7 @@ function Slider() {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src={banner1} className="d-block w-100" alt="banner1"/>
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption">
                                     <h5>INTRODUCING THE NEW</h5>
                                     <h1>Microsoft Xbox 360 Controller</h1>
                                     <p>Windos xp/10/7/8 os3, Tv Box</p>
@@ -27,7 +27,7 @@ function Slider() {
                         </div>
                         <div className="carousel-item">
                             <img src={banner2} className="d-block w-100" alt="banner2"/>
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption">
                                     <h5>INTRODUCING THE NEW</h5>
                                     <h1>Microsoft Xbox 360 Controller</h1>
                                     <p>Windos xp/10/7/8 os3, Tv Box</p>
@@ -36,7 +36,7 @@ function Slider() {
                         </div>
                         <div className="carousel-item">
                             <img src={banner3} className="d-block w-100" alt="banner3"/>
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption">
                                     <h5>INTRODUCING THE NEW</h5>
                                     <h1>Microsoft Xbox 360 Controller</h1>
                                     <p>Windos xp/10/7/8 os3, Tv Boxr</p>

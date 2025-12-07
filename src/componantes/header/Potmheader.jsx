@@ -3,24 +3,24 @@ import './Potmheader.css';
 import { Link, useLocation } from 'react-router-dom';
 
 const navlinks = [
-  {title:"Home" , link:"/"},
-  {title:"About" , link:"/About"},
-  {title:"Accessories" , link:"/Accessories"},
-  {title:"Blog" , link:"/Blog"},
-  {title:"Contact" , link:"/Contact"}
+  { title: "Home", link: "/" },
+  { title: "About", link: "/About" },
+  { title: "Accessories", link: "/Accessories" },
+  { title: "Blog", link: "/Blog" },
+  { title: "Contact", link: "/Contact" }
 ]
 
 
 function Potmheader() {
 
-  const location = useLocation ()
+  const location = useLocation()
   const [categories, setCategories] = useState([]);
-  const [iscategoryopen,setIscategoryopen] = useState (false)
+  const [iscategoryopen, setIscategoryopen] = useState(false)
 
 
-  useEffect(() =>{
+  useEffect(() => {
     setIscategoryopen(false)
-  },[location])
+  }, [location])
 
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function Potmheader() {
   }, [])
 
 
-  
+
   return (
     <>
 
@@ -39,10 +39,12 @@ function Potmheader() {
           <div className="nav">
             <div className="category-nav">
 
-              <div className="category-btn" onClick={()=>setIscategoryopen(!iscategoryopen)}>
+              <div className="category-btn" onClick={() => setIscategoryopen(!iscategoryopen)}>
+                <p>
                 <i className="bi bi-list"></i>
-                <p>Browse Category</p>
+                Browse Category
                 <i className="bi bi-arrow-down-short"></i>
+                </p>
               </div>
 
               <div className={`category-nav-list ${iscategoryopen ? "active" : ""}`}>
@@ -56,15 +58,11 @@ function Potmheader() {
             </div>
 
             <div className="nav-links">
-              {navlinks.map((item)=>(
-                <Link className= {`links  ${location.pathname === item.link ? "active" : ""}`} to={item.link} key={item.link}>{item.title}</Link>
+              {navlinks.map((item) => (
+                <Link className={`links  ${location.pathname === item.link ? "active" : ""}`} to={item.link} key={item.link}>{item.title}</Link>
               ))}
             </div>
 
-            <div className="nav-icons">
-              <i className="bi bi-box-arrow-in-right"></i>
-              <i className="bi bi-person-plus-fill"></i>
-            </div>
 
           </div>
         </div>

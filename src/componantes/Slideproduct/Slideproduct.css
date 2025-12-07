@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     border-bottom: 1px solid #d6d6d6d5;
     padding: 15px 20px 20px 0;
-    text-transform:capitalize ;
+    text-transform: capitalize;
 }
 
 .top-slid::after {
@@ -22,7 +22,9 @@
 
 .product {
     position: relative;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
     background: #fff;
     padding: 25px 15px;
     border: 1px solid #d6d6d6d5;
@@ -32,7 +34,7 @@
 }
 
 .product a {
-  text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -97,35 +99,41 @@
     transition: 0.5s;
 }
 
+@media (hover: none) {
+    .product .icons {
+        right: 15px;
+    }
+}
+
+
 .product:hover .icons {
     right: 15px;
 }
 
-.in-cart .icons .btn{
-    background:#0090f0 !important;
+.in-cart .icons .btn {
+    background: #0090f0 !important;
     color: #fff;
 }
 
 
 .product .icons .bi,
 .product .icons .btn {
-  width: 40px;
-  height: 40px;
-  background: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
-.product .icons .bi.infavorite{
-    background:#0090f0 !important;
+.product .icons .bi.infavorite {
+    background: #0090f0 !important;
     color: #fff;
 }
 
 .product.in-cart .icons .btn {
-  pointer-events: none !important;
-  opacity: 0.6; 
+    pointer-events: none !important;
+    opacity: 0.6;
 }
-

@@ -13,10 +13,12 @@
    justify-content: space-between;
    align-items: center;
    padding: 15px 0;
+   flex-wrap: wrap;
 }
 
 .Topheader .logo img {
    width: 100px;
+   padding: 0 10px;
 }
 
 .seacch-box {
@@ -48,6 +50,7 @@
 .Topheader .header-icons {
    display: flex;
    gap: 30px;
+   padding: 0 25px 0 0;
 }
 
 .Topheader .header-icons .icon {
@@ -71,4 +74,50 @@
    text-align: center;
    font-size: 11px;
    line-height: 20px;
+}
+
+
+
+/* شاشة تابلت */
+@media (max-width: 768px) {
+  .Topheader .logo img {
+    width: 80px;
+  }
+
+  .seacch-box {
+    width: 300px;
+  }
+
+  .Topheader .header-icons .bi {
+    font-size: 24px;
+  }
+
+  .Topheader .header-icons .count {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+/* شاشة موبايل */
+@media (max-width: 480px) {
+  .Topheader .logo img {
+    width: 60px;
+  }
+
+  .seacch-box {
+    width: 200px;
+  }
+
+  .Topheader .header-icons .bi {
+    font-size: 20px;
+  }
+
+  .Topheader .header-icons .count {
+    width: 16px;
+    height: 16px;
+    font-size: 9px;
+    line-height: 16px;
+  }
 }

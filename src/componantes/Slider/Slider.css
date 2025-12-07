@@ -1,34 +1,89 @@
-.container .carousel{
+.container .carousel {
     margin: 150px 0 10px 0;
 }
 
-.carousel-caption{
-    position: absolute;
-    top: 10%; 
-    left: 5%;
-    text-align:left ;
-}
-
-.carousel-caption h5,.carousel-caption p,.carousel-caption h1{
-    color: black;
+.carousel-caption {
+    width: 30%;
+    top: 20px;         
+    left: 20px;        
+    text-align: left;  
     display: block;
 }
 
-.carousel-indicators [data-bs-target] {
-  background-color: gray;  
+.carousel-caption h5,
+.carousel-caption p,
+.carousel-caption h1 {
+    color: black;
+    display: block;
+    padding-top: 10px; 
+    margin: 0;
 }
 
-.carousel-caption h1{
-    color:#0090f0 ;
-    width: 300px;
-    padding: 0 0 50px 0;
+.carousel-indicators [data-bs-target] {
+    background-color: gray;
 }
+
+.carousel-caption h5 { font-size: 16px; }
+.carousel-caption h1 { font-size: 24px; color: #0090f0; }
+.carousel-caption p { font-size: 14px; }
+
 .carousel-caption .btn-primary {
     background-color: #0090f0;
     border-color: #0090f0;
 }
 
 .carousel-caption .btn-primary:hover {
-    background-color: #007acc; 
+    background-color: #007acc;
     border-color: #007acc;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        width: 40%;       
+        top: 120px;       
+        left: 70px;       
+    }
+    .carousel-caption h5 { font-size: 22px; padding-top: 12px; }
+    .carousel-caption h1 { font-size: 36px; }
+    .carousel-caption p { font-size: 18px; }
+    .carousel-caption .btn-primary { padding: 10px 18px; font-size: 16px; }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        width: 50%;
+        top: 15px;
+        left: 15px;
+    }
+    .carousel-caption h5 { font-size: 14px; padding-top: 8px; }
+    .carousel-caption h1 { font-size: 20px; }
+    .carousel-caption p { font-size: 12px; }
+    .carousel-caption .btn-primary { padding: 5px 10px; font-size: 12px; }
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        width: 70%;
+        top: 10px;
+        left: 10px;
+    }
+    .carousel-caption h5 { font-size: 12px; padding-top: 5px; }
+    .carousel-caption h1 { font-size: 18px; }
+    .carousel-caption p { font-size: 11px; }
+    .carousel-caption .btn-primary { padding: 4px 8px; font-size: 11px; }
+}
+
+@media (max-width: 575px) {
+    .carousel-caption {
+        width: 85%;
+        top: 5px;
+        left: 5px;
+    }
+    .carousel-caption h5 { font-size: 11px; padding-top: 4px; }
+    .carousel-caption h1 { font-size: 16px; }
+    .carousel-caption p { font-size: 10px; }
+    .carousel-caption .btn-primary { padding: 3px 6px; font-size: 10px; }
 }

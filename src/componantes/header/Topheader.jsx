@@ -15,7 +15,7 @@ function Topheader() {
 
       <div className="Topheader">
         <div className="container">
-          <Link className='logo' to="/"> <img src={logo} alt="logo" /></Link>
+          <Link className='logo' to="/"> <img src={logo} alt="logo" className="img-fluid logo-img"/></Link>
 
           <Searchbox />
 

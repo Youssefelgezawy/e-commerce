@@ -1,7 +1,7 @@
 .Potmheader {
     background-color: #0090f0;
     position: fixed;
-    top: 70px;/* نفس ارتفاع Topheader تقريبا عشان ينزل تحته */
+    top: 70px;
     left: 0;
     width: 100%;
     z-index: 999;
@@ -17,22 +17,17 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 50px;
+    height: 55px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 .Potmheader .category-nav {
-    width: 220px;
+    width: 190px;
     height: 100%;
     position: relative;
-}
-
-.Potmheader .category-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 
 .Potmheader .category-btn p {
@@ -77,16 +72,13 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 0 15px;
     cursor: pointer;
 }
 
 .Potmheader .nav-links {
     display: flex;
-    margin-left: -400px;
     height: 100%;
 }
 
@@ -103,16 +95,86 @@
     background-color: #0079ca;
 }
 
-.Potmheader .nav-icons {
-    display: flex;
-    gap: 25px;
-    justify-content: flex-end;
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) { 
+
+  .Potmheader .nav {
+    justify-content: space-between;
+    height: 55px;
+  }
+
+  .Potmheader .category-btn p,
+  .Potmheader .nav-links .links {
+    font-size: 14px;
+    padding: 0 12px;
+  }
 }
 
-.Potmheader .nav-icons .bi {
-    display: flex;
+@media (max-width: 768px) { 
+
+  .Potmheader .nav {
+    justify-content: space-between;
+    height: 50px;
+    gap: 4px;
+  }
+
+  .Potmheader .category-btn p,
+  .Potmheader .nav-links .links {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 480px) { 
+
+  .Potmheader .nav {
+    height: 45px;
+  }
+
+  .Potmheader .category-btn p,
+  .Potmheader .nav-links .links {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+}
+
+
+@media (max-width: 443px) {
+
+  .Potmheader .nav {
+    flex-wrap: nowrap;       
+    justify-content: space-between;
     align-items: center;
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
+    height: 40px;
+    gap: 2px;
+  }
+
+  .Potmheader .category-btn p {
+    padding: 0;             
+    margin: 0;
+    font-size: 10px;         
+    white-space: nowrap;
+  }
+
+  .Potmheader .nav-links {
+    display: flex;
+    flex-wrap: nowrap;       
+    gap: 2px;
+  }
+
+  .Potmheader .nav-links .links {
+    padding: 0 3px;        
+    margin: 0;
+    font-size: 10px;        
+    white-space: nowrap;    
+  }
+
 }
